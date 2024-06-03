@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="ru" class="light">
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
       <title>Мое портфолио</title>
-
+      <link rel="stylesheet" href="./style.css" />
+  
     </head>
     <body>
         <nav>
+          <div class="themes">
+            <label><input type="radio" name="theme" value="light" checked>Light</label>
+            <label><input type="radio" name="theme" value="dark">Dark</label>
+          </div>
             <h2 id="logo">Ворошилов Савва</h2>
             <ul class="navigation-items">
                 <li class="navigation-item"><a href="#Обо-мне">Обо мне</a></li>
-                <li class="navigation-item"><a href="#Увлечение">Увлечения</a></li>
+                <li class="navigation-item"><a href="#Увлечение">Увлечение</a></li>
                 <li class="navigation-item"><a href="#Умения">Умения</a></li>
-                <li class="navigation-item"><a href="#Контакты">Контакты</a></li>
+                <li class="navigation-item"><a href="contacts.html">Контакты</a></li>
             </ul>
-
+            
+        </nav>
             <main>
                 <section id="Обо-мне">
-                    <div class="about-me-container">
-                    <div class="about-me-text-container">
+                    <div class="Обо-мне-container">
+                    <div class="Обо-мне-text-container">
                       <p>Здраствуйте! Меня зовут Савва Ворошилов, я родился 26 февраля 2004 года. В данный момент учусь в инситуте на прикладную информатику.</p>
                       <p>Живу в городе Пятигорск, прохожу обучение по frontend.</p>
                       <p>Программирование для меня как хобби, и работать в этот сфере одно удовольствие.</p>
@@ -28,7 +34,56 @@
                      <img src="/Users/sadboys2021/Library/Containers/ru.keepcoder.Telegram/Data/tmp/telegram-cloud-photo-size-2-5399993894168550601-y.jpg" alt="На фото Савва Ворошилов" class="portrait"/>
                     </div>
                 </section>
-            </main>
-        </nav>   
-    </body>        
+
+               <section id="Увлечение">
+                  <h2>Увлечение</h2>
+                  <details class="Увлечение">
+                    <summary class="Увлечение-title">
+                        <h3>Собирать лего</h3>
+                    </summary>
+                    <img src="https://statusmen.ru/wp-content/uploads/2021/01/shlem-zheleznogo-cheloveka.jpg" alt="на фото показано как человек собирает лего" class="Увлечение-image"/>
+                    <p class="Увлечение-description">С самого детства люблю собирать лего, это очень расслабляет.</p>
+                  </details>
+                  <details class="Увлечение">
+                    <summary class="Увлечение-title">
+                        <h3>Программирование</h3>
+                    </summary>
+                    <img src="https://edu-sigma.ru/wp-content/uploads/2023/05/логическое-программирование.jpg" alt="на фото показан код" class="Увлечение-image"/>
+                    <p class="Увлечение-description">Одно из увлечений это программировать, хотелось бы связать свою работу с этим.</p>
+                  </details>
+                  <details class="Увлечение">
+                    <summary class="Увлечение-title">
+                        <h3>Спорт</h3>
+                    </summary>
+                    <img src="https://tulsu.ru/storage/app/uploads/public/630/7b4/3b0/6307b43b03b7b844244730.jpg" alt="на фото показано упражнение с бицепсом" class="Увлечение-image" />
+                    <p class="Увлечение-description">Занятие спортом одно из любимых занятий</p>
+                  </details>
+               </section>
+
+               <section id="Умения">
+                <h2>Умения</h2>
+                <div id="умения-container">
+                  <ul>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>React</li>
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>Chrome</li>
+                    <li>Terminal</li>
+                    <li>Npm</li>
+                    <li>Node</li>
+                    <li>Github</li>
+                  </ul>
+                </div>
+               </section>
+            </main> 
+        <footer>Сделано с <span class="heart">♥</span> из Пятигорска</footer>
+        <script src="script.js "></script>
+    </body> 
+    
+    
+    
 </html>   
+
